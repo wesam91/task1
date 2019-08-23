@@ -1,0 +1,785 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+     font-family: 'Source Sans Pro', sans-serif;
+}
+.clr{
+    clear:both;
+    
+}
+
+.opac{
+     width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,0.5);}
+
+.home{
+    background-image: url(slider-01.jpg);
+    width:100%;
+    height:100vh;
+}
+
+.home .nav{
+    width:100%;
+     padding: 10px 0;
+    position: fixed;
+    z-index: 99999;
+    background-color: #555555;
+    margin-bottom: 50px; 
+    
+}
+.home .nav .resize{
+    width:80%;
+    margin:auto;
+}
+.nav .ho a{
+    color:#ff305b;
+}
+.home .nav .nav_left a{
+   color:#ff305b;
+    font-size: 24px;
+    font-weight: 800;
+   
+}
+.nav .nav_right{
+    float:right;
+}
+.nav ul{
+
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav ul li{
+    float:left;
+    padding:10px;
+}
+.nav ul a:hover{
+    color:#ff305b;
+}
+.nav ul:hover .ho a{
+    color:#fff;
+}
+.nav ul a{
+    text-decoration:none;
+    color:#fff;   
+}
+.home .info{
+ 
+    text-align: center;
+     padding-top:200px;
+}
+.info h3{
+      color:#fff;
+    padding-top:50px;
+}
+.info h1{
+    color:#ff305b;
+    font-size: 70px;
+    font-weight: bold;
+    
+    
+}
+.info .pragh{
+    position: relative;
+    
+   display: inline-block;
+    
+}
+.info .step{
+    position: relative;
+     overflow: hidden;
+    display: inline-block;
+     border-right: 1px solid #fff;
+}
+.info h4{
+    color:#fff;
+    font-size: 24px;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+     animation-iteration-count: infinite;
+    overflow: hidden;
+     animation-duration: 4s;
+     animation-name: ho ;
+     border-right: 1px solid blue;
+   
+}
+@keyframes ho{
+   0%{ left:0;}
+    50%{left:50%;}
+    51%{left: 49%;}
+    100%{left:20%;}
+}
+.info .design{
+     position: relative;
+   right:0;
+      animation-duration: 4s;
+     animation-name: appear ;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    opacity:1;
+}
+@keyframes appear{
+    0%{opacity:1;}
+    48%{opacity:1;}
+    49%{opacity:0;}
+    100%{opacity:0;}
+   
+}
+.info .develop{
+    position: relative;
+   right:0;
+    opacity:0;
+    animation-duration: 4s;
+      animation-name: disappear ;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes disappear{
+    0%{opacity:0}
+    50%{opacity:0 ;}
+    51%{opacity:1;}
+    100%{opacity:1;right:25%}
+}
+
+
+
+/*start profile*/
+
+
+
+
+
+
+
+.profile{
+  
+    overflow:hidden;
+   padding:100px 0 125 0;
+    width:80%;
+    margin: auto;
+    
+}
+.profile .pad{
+    width:50%;
+    padding-left:40px;
+   float: left;
+    overflow: hidden;
+}
+
+.profile .pro-pic{
+    float:left;
+    border: 8px solid #000;
+      border-radius: 4px;
+    position: relative;
+    
+}
+.profile .pro-pic .goup{
+    position: absolute;
+    left:8%;
+  bottom:-105%;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+   
+  
+}
+.profile .pro-pic:hover .goup{
+    animation-name: toup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    bottom:-5%;
+}
+@keyframes toup{
+    from{bottom:-105%;;}
+    to{bottom:-5%;}
+}
+
+.profile img{
+       transform: translateY(5%) translateX(8%);
+    width:100%;
+    border-radius: 4px;
+}
+.profile .pro-info{
+    width:50%;
+    float:left;
+    padding-left:80px;
+
+}
+.pro-info h2{
+    position: relative;
+    padding: 10px;
+}
+.pro-info h2:before{
+    content: " ";
+    position: absolute;
+    left:0;
+    top:15;
+    height:20px;
+    width:4px;
+    background-color:#ff305b;
+   
+    
+}
+.pro-info p{
+    border-bottom: 1px dashed #999999;
+    padding:20px 10px;
+}
+.pro-info .details{
+    overflow: hidden;
+    
+}
+.pro-info .details ul{
+    list-style-type: none;
+    display:table;
+    float:left;
+    padding:20px 40px 20px 0px;
+}
+.pro-info .details li{
+    padding:10px 20px 10px 0px;
+}
+.pro-info .details span{
+        color: #333333;
+    font-weight: 700;
+}
+.profile .btn a{
+    padding: 15px 30px ;
+    border:1px solid #fff;
+    border-radius: 8px;
+    background-color: #ff305b;
+    color:#fff;
+    text-decoration: none;
+    margin:20px 10px;
+
+}
+/*start service*/
+.services{
+    margin:auto;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+    
+}
+
+.services h2{
+    padding-top:30px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+
+}
+.services h2:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+   margin: auto;
+    width: 70px;
+    height:10px;
+   
+    border-top:1px solid #ff305b;
+    border-bottom:1px solid #ff305b;
+ 
+}
+.services h2:before{
+    content:"";
+    position: absolute;
+    bottom:5;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 160px;
+    height:1px;
+    background-color:#ff305b;
+   
+ 
+}
+.services .contain{
+   
+       overflow: hidden;
+        width:80%;
+        margin:auto;
+    
+}
+.services .service{
+    width:25%;
+    padding:10px;
+    float:left;
+}
+.service:hover{
+    background-color: #fff;
+}
+.services .service p{
+
+    padding: 20px  0px;}
+
+
+
+/*start portfolio*/
+
+.portfolio{
+   
+    text-align: center;
+    padding:20px 0px 40px;
+}
+.portfolio h2{
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+        padding-bottom: 20px;
+    
+}
+
+.portfolio h2:after{
+      content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+   margin: auto;
+    width: 70px;
+    height:10px;
+   
+    border-top:1px solid #ff305b;
+    border-bottom:1px solid #ff305b;
+}
+.portfolio h2:before{
+      content:"";
+    position: absolute;
+    bottom:5;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 160px;
+    height:1px;
+    background-color:#ff305b;
+}
+
+.portfolio .buton{
+    padding:10px;
+  
+    
+}
+.portfolio .buton button{
+    border:none;
+    background-color: #fff;
+    margin:20px;
+        font-size: 16px;
+    font-weight: 400;
+}
+.portfolio .buton button:hover{
+    color:#ff305b;       
+}
+        
+
+
+.portfolio .images{
+   
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+.portfolio .images .forpad  {
+    padding:10px;
+    width:33.3%;
+ float:left;}
+
+.portfolio .images .img1{
+     position: relative;
+      width:100%;
+     
+   
+    
+}
+
+.portfolio .images .shadow{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+   height:100%;
+  
+   background-color:transparent;
+}
+.portfolio .images img{
+    width:100%;
+}
+.portfolio .images .shadow:hover{
+    background-color: rgba(0,0,0,0.5)
+}
+/*
+
+.portfolio .images{
+    overflow: hidden;
+    width:80%;
+    margin: auto;
+}
+
+.portfolio .images .img1{
+    position:relative;
+    width:33.3%;
+     overflow:hidden;
+}
+.portfolio .images .shadow{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+     overflow:hidden;
+
+}
+.portfolio .images .img {
+   position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+     overflow:hidden;
+   
+   
+    
+}
+.portfolio .img1 .shadow:hover{
+ color:blue;
+}
+    
+*/
+
+/*start counter*/
+.counter{
+        background: #f1f1f1;
+    padding:100px 20px;
+    overflow:hidden;
+}
+.counter .coun{
+    width:25%;
+    padding:10px;
+    text-align: center;
+       
+    float:left;
+}
+.counter .coun h3{
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.counter .coun p{
+        color: #555555;
+        font-weight: 700;
+}
+
+
+
+/*feedback*/
+.feedback{
+    width:60%;
+    margin: auto;
+    
+    position: relative;
+    
+}
+
+.feedback h2{
+    text-align: center;
+    position:relative;
+    padding-bottom:20px;
+    padding-top: 50px;
+}
+.feedback h2:before{
+      content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+   margin: auto;
+    width: 70px;
+    height:10px;
+   
+    border-top:1px solid #ff305b;
+    border-bottom:1px solid #ff305b;
+       
+}
+ .feedback h2:after{
+       content:"";
+    position: absolute;
+    bottom:5;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 160px;
+    height:1px;
+    background-color:#ff305b;
+}
+ .back-color{
+  
+    background-color: #ff305b;
+      transform: skew(30deg, -30deg) translateY(-99%);
+     position: absolute;
+     bottom:0;
+     left:0;
+     width:100%;
+     height:100%;
+     
+     
+    
+}
+.feedback .client{
+    overflow: hidden;
+    background-color:#f1f1f1;
+    padding:40px;
+    position: relative;
+    border:1px solid transparent;
+    border-radius: 10px;
+ margin-top:20px;
+}
+
+.feedback .client .clientpic{
+    width:30%;
+    float:left;
+    padding:40px;
+    
+}
+.feedback .client .clientpic img{
+    border:1px solid transparent;
+    border-radius: 50%;
+    z-index: 222222;
+      position: relative;
+}
+.feedback .client .clientreview{
+    width:70%;
+    float:left;
+   padding:40px;
+}
+.feedback .stars{
+    padding-top:20px;
+    color: #f1c30d;
+}
+
+.feedback:after{
+    position: absolute;
+    content: " ";
+    bottom:-20;
+    right:48%;
+    width:25px;
+    height:10px;
+    margin:auto;
+   background-color:red;
+    border: 1px solid red;
+    border-radius: 20px;
+    
+}
+.feedback:before{
+    position: absolute;
+    content: " ";
+    bottom:-20;
+    left:45%;
+    width:10px;
+    height:10px;
+    margin:auto;
+    border: 1px solid red;
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*start blog*/
+.our-blog{
+   background-color: #f1f1f1;
+    overflow: hidden;
+    margin-top: 40px;
+    padding:50px 40px;
+   
+}
+.our-blog h2{
+    padding-bottom: 20px;
+    font-weight: 800;
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center
+}
+.our-blog h2:after{
+      content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+   margin: auto;
+    width: 70px;
+    height:10px;
+   
+    border-top:1px solid #ff305b;
+    border-bottom:1px solid #ff305b;  
+    
+    
+}
+.our-blog h2:before{
+    content:"";
+    position: absolute;
+    bottom:5;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 160px;
+    height:1px;
+    background-color:#ff305b;
+    
+    
+    
+    
+}
+.our-blog .gray{
+    padding:20px;
+    background-color: #f1f1f1;
+      width:33.3%;
+     float:left;
+}
+.our-blog .blog{ 
+   
+    background-color: #fff;
+}
+.our-blog .blog img{
+    width:100%;
+}
+.our-blog .blog .dat{
+    padding:20px;
+}
+.our-blog .blog p{
+    padding:10px 70px 20px 20px;
+}
+.our-blog .blog .link{
+    padding: 20px;
+}
+.our-blog .blog .link a{
+    text-decoration: none;
+    color:#333;
+    font-size: 16px;
+}
+.our-blog .blog .link a:hover{
+    color:#ff305b;
+
+}
+.our-blog .blog h3 a{
+    padding:20px;
+    color:#000;
+    text-decoration: none;
+    
+} 
+/*contact*/
+form{
+   
+    padding:60px;
+    margin-bottom: 30px;
+}
+
+form .row1,form .row2,form .row3,form .row4{
+    width:60%;
+    overflow:hidden;
+   padding:10px 0;
+    margin: auto;
+    
+}
+form .row1 .name {
+    width:50%;
+    padding-right:20px;
+    float: left;
+    
+}
+
+form .row1 .mail{
+    width:50%;
+    float:left;
+    
+}
+form .row1 .name input,form .row1 .mail input{
+    width:100%;
+   outline: none;
+}
+
+
+form .row2 input{
+    width: 100%;
+  outline-color: none;
+
+}
+
+
+form .row3 textarea
+{border-radius: 10px;
+    padding:10px;
+}
+
+
+form .row4 input{
+  background-color: #ff305b;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:#fff;
+}
+form input {
+    padding:15px 0px 15px 10px;
+    border-radius: 10px;
+     color: #555555;
+}
+form input:hover,form textarea:hover {
+    border-color: #ff305b;
+    outline-color: none;
+}
+
+/*start footer*/
+.footer ,.goup{
+    text-align: center;
+    color:#fff;
+    background: #333333;
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    
+}
+.footer ul ,.goup ul {
+    overflow:hidden;
+   
+    display:inline-block
+   
+}
+.footer ul li ,.goup ul li{
+   float:left;
+    padding:10px;
+    list-style-type: none;
+}
+.footer a ,.goup a{text-decoration: none;}
+.footer .fa ,.goup .fa{
+    color:#fff;
+    
+}
+.fa:hover{
+     color:#ff305b;
+}
+.footer span{
+    color:#ff305b;
+     
+}
+
